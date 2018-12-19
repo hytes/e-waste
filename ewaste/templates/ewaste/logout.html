@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<h1></h1>
+<form class="logo-link"action="[% url'ewaste:logout'%]"method="POST">
+	{% csrf_token %}
+	
+	<button type="submit">Logout</button>
+</form>
+{% block body%}
+{% endblock %}	
+</html>

@@ -1,0 +1,12 @@
+{% load bootstrap3 %}
+{% block body%}
+<h1>Log in </h1>
+<form class="site-form"action="[% url'deno:login'%]"method="POST">
+	{% csrf_token %}
+	{{ form }}
+    {% if request.GET.next %}
+    <input type="hidden" name="next"value="{{request.GET.next}}">
+    {% endif %}
+	<input type="submit" value="Login">
+</form>
+{% endblock %}	

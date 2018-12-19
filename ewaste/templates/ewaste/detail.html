@@ -1,0 +1,10 @@
+{% if all_general %}
+{% for general in all_general %}
+{{general.id}}
+{{general.location}}
+{{general.joint}}
+{{general.time}}
+{% endfor %}
+{% else %}
+no pick up
+{% endif %}7

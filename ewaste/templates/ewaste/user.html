@@ -1,0 +1,10 @@
+{% if all_specific %}
+{% for specific in all_specific %}
+{{specific.id}}
+{{specific.location}}
+{{specific.quantity}}
+{{specific.time}}
+{% endfor %}
+{% else %}
+no pick up
+{% endif %}
